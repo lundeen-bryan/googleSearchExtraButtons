@@ -12,6 +12,11 @@
 // @include https://www.gstatic.com/sites/p/b9356d/system/services/test.html
 // @include https://www.gstatic.com/index.html
 // ==/UserScript==
+// 🕮 <lunde> ef3c5f9a-82e1-4b71-9a8d-7c902e27927b.md
+const BASE_POSITION = -127; // Starting position of buttons used in csLeft function
+const BUTTON_SPACING = 37; // Spacing between each button
+const RIGHT_OFFSET = 180; // Offset from the right
+
 var xLocStI = 0,
   xLocSto = [
     {
@@ -674,11 +679,12 @@ if (location.host == xLocSto[xLocStI].origin.replace(/[^/]*\/\//, "")) {
                             : $L[bI.one])
                         );
                       },
-                      csLeft = function (ii, a) {
-                        a = -127 + 37 * (ii - 1);
+                      // 🕮 <lunde> ef3c5f9a-82e1-4b71-9a8d-7c902e27927b.md
+                      csLeft = function (ii) {
+                        let calculatedPosition = BASE_POSITION + BUTTON_SPACING * (ii - 1);
                         return design1612 || layout1811
-                          ? { right: -a + 33 + "px" }
-                          : { left: a + "px" };
+                          ? { right: -calculatedPosition - RIGHT_OFFSET + "px" }
+                          : { left: calculatedPosition + "px" };
                       },
                       isBWShown2 = isBWShown && i == "PDF",
                       butt2 = $e({
