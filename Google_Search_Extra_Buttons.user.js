@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Google Search Extra Buttons
+// @name Google Search Extra Buttons (Position Slightly Right)
 // @description Add buttons (past 1/2/3 days, weeks, PDF search etc.) for Google search page
 // @version 45.2022.8.23
 // @namespace spmbt.github.com
@@ -11,6 +11,7 @@
 // @include https://spmbt.github.io/googleSearchExtraButtons/saveYourLocalStorage.html
 // @include https://www.gstatic.com/sites/p/b9356d/system/services/test.html
 // @include https://www.gstatic.com/index.html
+// @license MIT
 // ==/UserScript==
 // 🕮 <lunde> ef3c5f9a-82e1-4b71-9a8d-7c902e27927b.md
 const BASE_POSITION = -127; // Starting position of buttons used in csLeft function

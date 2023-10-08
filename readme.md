@@ -1,8 +1,16 @@
-### Google Search Extra Buttons
+### Google Search Extra Buttons (Position Further Right)
 
-[(show this instruction **in Russian**)](readmeRu.md)
+---
 
+Fork of [Google Search Extra Buttons](https://greasyfork.org/en/scripts/7543-google-search-extra-buttons).
+
+This is slightly changed from [Google Search Extra Buttons](https://greasyfork.org/en/scripts/7543-google-search-extra-buttons) to move it further to the right.
+
+---
+
+2023-10-08: Reformatted script w/Prettier+, and edited csList function to use constant values to change the vertical position of the buttons slightly more to the right than previous.</br>
 Add buttons of customized search to start page and results page of Google.<br>
+
 *(Fx, Chrome, Opera12+, Safari, [MS Edge + Win10 + Tampermonkey](https://greasyfork.org/ru/forum/discussion/6048/x))*, Vivaldi, KMeleon, Yandex, Brave
 
 NOTE 2022-08: 1) for working in Images tab in Chrome it need install extension whiсh disable CSP (Content Security Policy) else breaks by JS error. (It's not required for common search.)<br>
